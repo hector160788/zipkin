@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    config:
+      server:
+        git:
+#          uri: https://github.com/hector160788/config-server
+#          uri: https://github.com/hector160788/eureka
+#          uri: https://github.com/hector160788/multiple-instances
+#          uri: https://github.com/hector160788/gateway
+#         uri: https://github.com/hector160788/circuit-breaker
+#         uri: https://github.com/hector160788/zipkin
+          uri: https://github.com/hector160788/keycloak
+          search-paths: config-data
+  application:
+    name: config-service 
